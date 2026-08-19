@@ -1,0 +1,6 @@
+{
+  "name": "Lumani Education Platform",
+  "description": "Premium, modern, minimal education technology ecosystem by Erica Innovations (Pty) Ltd embodying Learning, Technology, Community, and Trust.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

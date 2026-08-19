@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy: #0D1B3D;
+    --navy-light: #152A5E;
+    --blue: #1E88E5;
+    --blue-light: #64B5F6;
+    --blue-surface: #F0F7FF;
+    --green: #43A047;
+    --green-light: #81C784;
+    --green-surface: #F1F8F1;
+    --orange: #FF9800;
+    --orange-light: #FFB74D;
+    --orange-surface: #FFF8E1;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: #1E293B;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  .font-logo {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+/* Custom subtle pattern backgrounds */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(30, 136, 229, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 136, 229, 0.05) 1px, transparent 1px);
+}
+
+.bg-dots-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(13, 27, 61, 0.07) 1.2px, transparent 1.2px);
+}
+
+/* Soft Apple/Notion style shadows */
+.shadow-soft-sm {
+  box-shadow: 0 2px 8px -2px rgba(13, 27, 61, 0.05), 0 1px 4px -1px rgba(13, 27, 61, 0.03);
+}
+
+.shadow-soft-md {
+  box-shadow: 0 12px 32px -8px rgba(13, 27, 61, 0.08), 0 4px 12px -2px rgba(13, 27, 61, 0.04);
+}
+
+.shadow-soft-xl {
+  box-shadow: 0 24px 54px -12px rgba(13, 27, 61, 0.12), 0 8px 24px -4px rgba(13, 27, 61, 0.06);
+}
+
+.shadow-glow-blue {
+  box-shadow: 0 0 40px -10px rgba(30, 136, 229, 0.35);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
