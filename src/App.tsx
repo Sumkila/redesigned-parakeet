@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Analytics } from '@vercel/analytics/react';
 import { Navbar } from './components/Navbar.tsx';
 import { Hero } from './components/Hero.tsx';
 import { DashboardPreview } from './components/DashboardPreview.tsx';
@@ -41,13 +40,7 @@ export default function App() {
   };
 
   return (
-    <div
-      className="min-h-screen bg-[#FAFCFF] flex flex-col selection:bg-[#1E88E5]/20 selection:text-[#0D1B3D]"
-      id="lumani-app-root"
-    >
-      {/* Vercel Web Analytics */}
-      <Analytics />
-
+    <div className="min-h-screen bg-[#FAFCFF] flex flex-col selection:bg-[#1E88E5]/20 selection:text-[#0D1B3D]" id="lumani-app-root">
       {/* Top Floating Glass Navigation */}
       <Navbar
         onOpenDemo={() => handleOpenDemo(activeRole)}
